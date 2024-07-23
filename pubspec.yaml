@@ -1,0 +1,39 @@
+name: parking_app
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.5.0-180.3.beta <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  font_awesome_flutter: ^10.6.0
+  lottie: ^3.1.2
+  firebase_core: ^3.2.0
+  flutter_bloc: ^8.1.6
+  firebase_auth: ^5.1.2
+  bloc: ^8.1.4
+  equatable: ^2.0.5
+  flag: ^7.0.0
+  # custome repository
+  # you need to add this dependence for using it inside lib with import 
+  user_repository:
+    path: packages/user_repository
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+    uses-material-design: true
+
+    assets:
+      - assets/
+    fonts:
+      - family: Nuito
+        fonts:
+          - asset: assets/fonts/Nunito-Regular.ttf
